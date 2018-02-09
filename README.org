@@ -8,7 +8,8 @@ Three steps are necessary to use this library:
 2. Include the library.
 3. Instantiate an object.
 
-#+BEGIN_SRC scad :file cube.png :exports results
+
+#+BEGIN_EXAMPLE
 meter=100;
 m_to_in=0.0254;
 inch=meter*m_to_in;
@@ -16,5 +17,4 @@ inch=meter*m_to_in;
 include <openscad_wood/lumber.scad>;
 
 board(2,4);
-
-#+END_SRC
+#+END_EXAMPLE
