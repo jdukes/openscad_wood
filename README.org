@@ -1,0 +1,20 @@
+* Installation
+To install on your operating system refer to the manual 
+https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Libraries
+* Usage
+Three steps are necessary to use this library:
+1. Define an inch as a variable. This can be any number, it's used as
+   a base to calculate other values such as `ft`. 
+2. Include the library.
+3. Instantiate an object.
+
+#+BEGIN_SRC scad :file cube.png :exports results
+meter=100;
+m_to_in=0.0254;
+inch=meter*m_to_in;
+
+include <openscad_wood/lumber.scad>;
+
+board(2,4);
+
+#+END_SRC
